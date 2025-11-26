@@ -1,0 +1,240 @@
+/* ==========================
+   Configurações gerais
+========================== */
+:root {
+    --accent: #17b35a;
+    --accent2: #d6f7e5;
+    --text: rgb(0, 0, 0);
+    --muted: rgb(0, 0, 0);
+    --bg: #f4fbf7;
+    --radius: 14px;
+    --shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+  
+  body {
+    margin: 0;
+    background: var(--bg);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    border-radius: var(--radius);
+  }
+  
+  /* ==========================
+     Header
+  ========================== */
+  header {
+    background: #fff;
+    padding: 14px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .logo {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius);
+    font-weight: 800;
+  }
+  
+  .subtitle {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav a {
+    color: var(--muted);
+    font-weight: 600;
+  }
+  
+  .cta {
+    background: var(--accent);
+    color: #fff !important;
+    padding: 8px 14px;
+    border-radius: var(--radius);
+  }
+  
+  /* ==========================
+     Hero
+  ========================== */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 40px 0;
+  }
+  
+  .kicker {
+    background: #dff3e9;
+    color: var(--accent);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight: 700;
+  }
+  
+  .hero-main h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .lead {
+    color: var(--muted);
+    max-width: 600px;
+  }
+  
+  .hero-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+  }
+  
+  .btn-primary {
+    background: var(--accent);
+    color: white;
+    padding: 12px 18px;
+    border-radius: var(--radius);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-secondary {
+    padding: 12px 18px;
+    border-radius: var(--radius);
+    border: 2px solid var(--accent);
+    color: var(--accent);
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+  
+  .mock {
+    height: 240px;
+    background: linear-gradient(135deg, var(--accent2), var(--accent));
+    border-radius: var(--radius);
+  }
+  
+  /* ==========================
+     Seções
+  ========================== */
+  .section {
+    padding: 40px 0;
+  }
+  
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  .feature {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* ==========================
+     Projetos
+  ========================== */
+  .projects {
+    display: grid;
+    gap: 20px;
+  }
+  
+  /* ==========================
+     Impacto
+  ========================== */
+  .stats {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .stat h3 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  /* ==========================
+     Contato
+  ========================== */
+  .form input,
+  .form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: var(--radius);
+    border: 1px solid #ccc;
+  }
+  
+  /* ==========================
+     Rodapé
+  ========================== */
+  footer {
+    padding: 20px 0;
+    background: #fff;
+    text-align: center;
+    color: var(--muted);
+    margin-top: 40px;
+  }
+  
+  /* ==========================
+     RESPONSIVIDADE
+  ========================== */
+  @media (min-width: 768px) {
+    .hero {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .grid-2 {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .stats, .projects {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  

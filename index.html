@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECOVIBE — ONG Ambiental</title>
+
+  <!-- Importação da fonte Boldonse -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+
+  <!-- Importação do CSS externo -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Aplicando a fonte no nome ECOVIBE e no subtítulo */
+    .brand strong,
+    .brand .subtitle {
+      font-family: 'Boldonse', sans-serif;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo"><img src="img/ecovibe.png" alt=""></div>
+        <div>
+          <strong>ECOVIBE</strong><br>
+          <span class="subtitle">Proteção Ambiental & Reciclagem</span>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#impacto">Impacto</a></li>
+          <li><a href="#contato" class="cta">Participe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="container hero">
+    <div class="hero-main">
+      <span class="kicker">Educação Ambiental • Reciclagem • Sustentabilidade</span>
+      <h1>Transformamos resíduos em futuro.</h1>
+      <p class="lead">A EcoVibe transforma atitude em impacto: reciclamos, educamos e inspiramos comunidades a adotarem práticas sustentáveis. Nascemos do desejo de renovar o planeta, unindo oficinas criativas, reciclagem responsável e ações que despertam consciência ambiental e motivam cada pessoa a fazer parte da mudança.</p>
+
+      <div class="hero-actions">
+        <a class="btn-primary" href="#projetos">Conhecer Projetos</a>
+        <a class="btn-secondary" href="#contato">Quero Ajudar</a>
+      </div>
+    </div>
+
+    <div class="hero-visual card">
+      <div class="mock"></div>
+    </div>
+  </main>
+
+  <!-- Sobre -->
+  <section id="sobre" class="container section">
+    <div class="grid-2 card">
+      <div>
+        <h2>Quem somos</h2>
+        <p>A EcoVibe é uma ONG dedicada à preservação ambiental através de coleta seletiva, reciclagem, oficinas e programas educacionais.</p>
+
+        <div class="features">
+          <div class="feature">
+            <div class="icon">♻️</div>
+            <p><strong>Coleta Seletiva</strong><br> Pontos de reciclagem em comunidades.</p>
+          </div>
+
+          <div class="feature">
+            <div class="icon">🌱</div>
+            <p><strong>Projetos Ambientais</strong><br> Oficinas e ações de conscientização.</p>
+          </div>
+        </div>
+      </div>
+
+      <img src="https://images.unsplash.com/photo-1528476513691-07e6f563d97a?auto=format&fit=crop&w=800&q=60" alt="Ação ambiental" class="img">
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="container section">
+    <h2>Projetos</h2>
+
+    <div class="projects">
+      <div class="card">
+        <h3>Coleta Comunitária</h3>
+        <p>Instalamos pontos de coleta e direcionamos resíduos para recicladores certificados.</p>
+      </div>
+
+      <div class="card">
+        <h3>Oficinas de Reutilização</h3>
+        <p>Transformamos plásticos, vidros e papéis em novos produtos úteis ou decorativos.</p>
+      </div>
+
+      <div class="card">
+        <h3>ReciclaTec</h3>
+        <p></p>
+      </div>
+
+      <div class="card">
+        <h3>Oficinas de Reutilização</h3>
+        <p>Transformamos plásticos, vidros e papéis em novos produtos úteis ou decorativos.</p>
+      </div>
+
+      <div class="card">
+        <h3>Oficinas de Reutilização</h3>
+        <p>Transformamos plásticos, vidros e papéis em novos produtos úteis ou decorativos.</p>
+      </div>
+
+      <div class="card">
+        <h3>Oficinas de Reutilização</h3>
+        <p>Transformamos plásticos, vidros e papéis em novos produtos úteis ou decorativos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impacto -->
+  <section id="impacto" class="container section">
+    <h2>Nosso Impacto</h2>
+
+    <div class="stats">
+      <div class="stat card">
+        <h3>120t+</h3>
+        <p>Resíduos reciclados</p>
+      </div>
+      <div class="stat card">
+        <h3>45</h3>
+        <p>Pontos de coleta</p>
+      </div>
+      <div class="stat card">
+        <h3>800+</h3>
+        <p>Pessoas impactadas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="container section">
+    <h2>Entre em Contato</h2>
+
+    <div class="grid-2">
+        <div class="card form">
+          <p class="subtitle">
+            Fale conosco para parcerias, dúvidas, projetos ou apoio ambiental. Estamos aqui para ajudar.
+          </p>
+      
+          <form>
+      
+            <div class="form-group">
+              <label for="nome">
+                <span>👤 Nome completo</span>
+              </label>
+              <input id="nome" type="text" placeholder="Digite seu nome" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="email">
+                <span>📧 E-mail</span>
+              </label>
+              <input id="email" type="email" placeholder="Seu melhor e-mail" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="telefone">
+                <span>📱 Telefone (opcional)</span>
+              </label>
+              <input id="telefone" type="tel" placeholder="(00) 00000-0000">
+            </div>
+      
+            <div class="form-group">
+              <label for="assunto">
+                <span>📌 Assunto</span>
+              </label>
+              <select id="assunto" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option>Quero ser voluntário</option>
+                <option>Doações e apoio financeiro</option>
+                <option>Parcerias e projetos</option>
+                <option>Dúvidas gerais</option>
+              </select>
+            </div>
+      
+            <div class="form-group">
+              <label for="mensagem">
+                <span>💬 Mensagem</span>
+              </label>
+              <textarea id="mensagem" placeholder="Escreva sua mensagem..." rows="5" required></textarea>
+            </div>
+      
+            <button class="btn-primary" type="submit">Enviar mensagem</button>
+          </form>
+      
+        </div>
+      </div>
+      
+      <div class="card">
+        <h3>Faça Parte da Mudança</h3>
+        <p>
+          Apoie nossos projetos de educação ambiental, reciclagem e preservação.  
+          Sua contribuição ajuda a transformar comunidades e proteger o meio ambiente.
+        </p>
+        <p>
+          <strong>Banco Sustentável</strong><br>
+          Agência: <strong>0001</strong><br>
+          Conta: <strong>12345-6</strong>
+        </p>
+      </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container footer">
+      <p>© <script>document.write(new Date().getFullYear());</script> EcoVibe — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+</body>
+</html>
